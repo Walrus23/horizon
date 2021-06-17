@@ -15,6 +15,7 @@
 	limbs_icon = 'hrzn/modules/teshari/icons/mob/species/teshari_parts_greyscale.dmi'
 	eyes_icon = 'hrzn/modules/teshari/icons/mob/species/teshari_eyes.dmi'
 	default_mutant_bodyparts = list("tail" = "Teshari Tail")
+	bodytype = BODYTYPE_TESHARI
 
 /datum/language_holder/teshari
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
