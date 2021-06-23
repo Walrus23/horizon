@@ -2,6 +2,7 @@
 /datum/species/teshari
 	id = "teshari"
 	name = "Teshari"
+	flavor_text = "Warning: WIP Race. May not work correctly. ::: A small feathered species, often compared to both birds, and raptors."
 	default_color = "0F0"
 	liked_food = GROSS | MEAT | FRIED
 	say_mod = "chirps"
