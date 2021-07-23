@@ -189,8 +189,53 @@
 		var/turf/T = loc
 		T.Entered(src)
 
-//Ayy lmao
+/datum/emote/living/carbon/human/chirp
+	key = "chirp"
+	key_third_person = "chirps"
+	message = "chirps like a bird!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
 
+/datum/emote/living/carbon/human/chirp/get_sound(mob/living/user)
+	if(!ishuman(user)) return
+	var/mob/living/carbon/human/emoter = user
+
+	if(isteshari(emoter))
+		return 'sound/voice/teshari/teshchirp.ogg'
+
+	return sound
+
+/datum/emote/living/carbon/human/squeak
+	key = "squeak"
+	key_third_person = "squeaks"
+	message = "squeaks like a bird!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/squeak/get_sound(mob/living/user)
+	if(!ishuman(user)) return
+	var/mob/living/carbon/human/emoter = user
+
+	if(isteshari(emoter))
+		return 'sound/voice/teshari/teshsqueak.ogg'
+
+	return sound
+
+/datum/emote/living/carbon/human/trill
+	key = "trill"
+	key_third_person = "trills"
+	message = "trills like a bird!"
+	emote_type = EMOTE_AUDIBLE
+	vary = TRUE
+
+/datum/emote/living/carbon/human/trill/get_sound(mob/living/user)
+	if(!ishuman(user)) return
+	var/mob/living/carbon/human/emoter = user
+
+	if(isteshari(emoter))
+		return 'sound/voice/teshari/teshtrill.ogg'
+
+	return sound
 
 ///Snowflake emotes only for le epic chimp
 /datum/emote/living/carbon/human/monkey
