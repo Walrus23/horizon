@@ -654,3 +654,16 @@
 	attack_verb_continuous = list("slashes", "bites", "charges")
 	attack_verb_simple = list("slash", "bite", "charge")
 	squeak_override = list('sound/items/intents/Help.ogg' = 1)
+
+/obj/item/toy/plush/teshari
+	name = "teshari plushie"
+	desc = "This is a plush teshari. Very soft, with a pompom on the tail. The toy is made well, as if alive. Looks like she is sleeping. Shhh!"
+	icon_state = "teshari_sleeping"
+	inhand_icon_state = "teshari_sleeping"
+	attack_verb_continuous = list("claws", "flaps", "bites", "chirps")
+	attack_verb_simple = list("claw", "flap", "bite", "chirp")
+	squeak_override = list(
+		'sound/voice/teshari/teshchirp.ogg' = 1,
+		'sound/voice/teshari/teshsqueak.ogg' = 3,
+		'sound/voice/teshari/teshtrill.ogg' = 7,
+	)
