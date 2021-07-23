@@ -79,24 +79,46 @@
 	return ..()
 
 /datum/emote/living/cough/get_sound(mob/living/user)
+	if(!isliving(user)) return
+
+	if(isteshari(user))
+		return pick(
+			'sound/voice/teshari/tesharicough.ogg',
+			'sound/voice/teshari/tesharicough1.ogg',
+		)
 	if(isvox(user))
 		return 'hrzn/modules/emotes/sound/emotes/voxcough.ogg'
+
 	if(iscarbon(user))
 		if(user.gender == MALE)
-			return pick('hrzn/modules/emotes/sound/emotes/male/male_cough_1.ogg',
-						'hrzn/modules/emotes/sound/emotes/male/male_cough_2.ogg',
-						'hrzn/modules/emotes/sound/emotes/male/male_cough_3.ogg')
-		return pick('hrzn/modules/emotes/sound/emotes/female/female_cough_1.ogg',
-					'hrzn/modules/emotes/sound/emotes/female/female_cough_2.ogg',
-					'hrzn/modules/emotes/sound/emotes/female/female_cough_3.ogg')
+			return pick(
+				'hrzn/modules/emotes/sound/emotes/male/male_cough_1.ogg',
+				'hrzn/modules/emotes/sound/emotes/male/male_cough_2.ogg',
+				'hrzn/modules/emotes/sound/emotes/male/male_cough_3.ogg',
+			)
+		return pick(
+			'hrzn/modules/emotes/sound/emotes/female/female_cough_1.ogg',
+			'hrzn/modules/emotes/sound/emotes/female/female_cough_2.ogg',
+			'hrzn/modules/emotes/sound/emotes/female/female_cough_3.ogg',
+		)
 	return
 
 /datum/emote/living/sneeze
 	vary = TRUE
 
 /datum/emote/living/sneeze/get_sound(mob/living/user)
+	if(!isliving(user)) return
+
+	if(isteshari(user))
+		sound_volume = sound_volume * 0.80	// Lowering it down a tad as the sound freq is a little irritating
+		return pick(
+			'sound/voice/teshari/tesharisneeze.ogg',
+			'sound/voice/teshari/tesharisneeze1.ogg',
+		)
+
 	if(isvox(user))
 		return 'hrzn/modules/emotes/sound/emotes/voxsneeze.ogg'
+
 	if(iscarbon(user))
 		if(user.gender == MALE)
 			return 'hrzn/modules/emotes/sound/emotes/male/male_sneeze.ogg'
