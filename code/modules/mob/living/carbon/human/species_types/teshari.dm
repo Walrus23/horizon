@@ -17,6 +17,30 @@
 	default_mutant_bodyparts = list("tail" = "Teshari Tail")
 	bodytype = BODYTYPE_TESHARI
 
+/datum/species/teshari/get_random_features()
+	var/list/colormap = MANDATORY_FEATURE_LIST
+	var/primary_color
+	var/secondary_color
+	var/tertiary_color
+
+	var/random = rand(1, 5)
+
+	switch(random)
+		if(1)
+			primary_color = "BBAA88"
+			secondary_color = "AAAA99"
+			tertiary_color = "EEEEDD"
+		else
+			primary_color = "777766"
+			secondary_color = "888877"
+			tertiary_color = "EEEEDD"
+
+	colormap["mcolor"] = primary_color
+	colormap["mcolor2"] = secondary_color
+	colormap["mcolor3"] = tertiary_color
+
+	return colormap
+
 /datum/language_holder/teshari
 	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
 								/datum/language/vox = list(LANGUAGE_ATOM))
