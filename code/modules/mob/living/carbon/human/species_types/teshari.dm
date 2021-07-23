@@ -16,18 +16,3 @@
 	eyes_icon = 'icons/mob/species/teshari_eyes.dmi'
 	default_mutant_bodyparts = list("tail" = "Teshari Tail")
 	bodytype = BODYTYPE_TESHARI
-
-/datum/language_holder/teshari
-	understood_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-								/datum/language/vox = list(LANGUAGE_ATOM))
-	spoken_languages = list(/datum/language/common = list(LANGUAGE_ATOM),
-							/datum/language/vox = list(LANGUAGE_ATOM))
-
-/mob/living/carbon/human/species/teshari
-	race = /datum/species/teshari
-
-/datum/sprite_accessory/tails/teshari
-	icon = 'icons/mob/sprite_accessory/teshari_tails.dmi'
-	name = "Teshari Tail"
-	icon_state = "teshari"
-	recommended_species = list("teshari")

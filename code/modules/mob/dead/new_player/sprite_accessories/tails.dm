@@ -338,3 +338,10 @@
 	name = "Leopard"
 	icon_state = "leopard"
 	general_type = "feline"
+
+/datum/sprite_accessory/tails/teshari
+	icon = 'icons/mob/sprite_accessory/teshari_tails.dmi'
+	icon_state = "teshari"
+	recommended_species = list("teshari")
+	organ_type = /obj/item/organ/tail/fluffy/no_wag
+	name = "Teshari Tail"
