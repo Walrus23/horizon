@@ -231,7 +231,7 @@
 
 /datum/sprite_accessory/ears/teshari
 	organ_type = /obj/item/organ/ears/mutant
-	color_src = USE_MATRIXED_COLORS
+	color_src = USE_ONE_COLOR
 	recommended_species = list("teshari")
 	icon = 'icons/mob/sprite_accessory/teshari_ears.dmi'
 	bodytypes = BODYTYPE_TESHARI
