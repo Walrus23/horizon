@@ -294,7 +294,7 @@
 /datum/sprite_accessory/hair/flattop
 	name = "Flat Top / Sergeant"
 	icon_state = "hair_flattop"
-	
+
 /datum/sprite_accessory/hair/flattop_big
 	name = "Flat Top (Big)"
 	icon_state = "hair_flattop-big"
@@ -714,3 +714,87 @@
 /datum/sprite_accessory/hair/wisp
 	name = "Wisp"
 	icon_state = "hair_wisp"
+
+/datum/sprite_accessory/hair/teshari
+	icon = 'icons/mob/sprite_accessory/teshari_hair.dmi'
+	recommended_species = list("teshari")
+	bodytypes = BODYTYPE_TESHARI
+
+/datum/sprite_accessory/hair/teshari/backstrafe
+	name = "Teshari Backstrafe"
+	icon_state = "teshari_backstrafe"
+
+/datum/sprite_accessory/hair/teshari/default
+	name = "Teshari"
+	icon_state = "teshari_default"
+
+/datum/sprite_accessory/hair/teshari/default/alternate
+	name = "Teshari (Alternate)"
+	icon_state = "teshari_ears"
+
+/datum/sprite_accessory/hair/teshari/tight
+	name = "Teshari Tight"
+	icon_state = "teshari_tight"
+
+/datum/sprite_accessory/hair/teshari/spike
+	name = "Teshari Spike"
+	icon_state = "teshari_spike"
+
+/datum/sprite_accessory/hair/teshari/spiky
+	name = "Teshari Spiky"
+	icon_state = "teshari_spiky"
+
+/datum/sprite_accessory/hair/teshari/long
+	name = "Teshari Overgrown"
+	icon_state = "teshari_long"
+
+/datum/sprite_accessory/hair/teshari/burst
+	name = "Teshari Starburst"
+	icon_state = "teshari_burst"
+
+/datum/sprite_accessory/hair/teshari/burst/short
+	name = "Teshari Starburst (Short)"
+	icon_state = "teshari_burst_short"
+
+/datum/sprite_accessory/hair/teshari/mohawk
+	name = "Teshari Mohawk"
+	icon_state = "teshari_mohawk"
+
+/datum/sprite_accessory/hair/teshari/mohawk/fluffy
+	name = "Teshari Mohawk (Fluffy)"
+	icon_state = "teshari_mohawk-fluffy"
+
+/datum/sprite_accessory/hair/teshari/pointy
+	name = "Teshari Pointy"
+	icon_state = "teshari_pointy"
+
+/datum/sprite_accessory/hair/teshari/upright
+	name = "Teshari Upright"
+	icon_state = "teshari_upright"
+
+/datum/sprite_accessory/hair/teshari/mane
+	name = "Teshari Mane"
+	icon_state = "teshari_mane"
+
+/datum/sprite_accessory/hair/teshari/droopy
+	name = "Teshari Droopy"
+	icon_state = "teshari_droopy"
+
+/datum/sprite_accessory/hair/teshari/mushroom
+	name = "Teshari Mushroom"
+	icon_state = "teshari_mushroom"
+
+//Tesh things ported from Ark Station
+/datum/sprite_accessory/hair/teshari/twies
+	name = "Teshari Twies"
+	icon_state = "teshari_twies"
+
+
+
+/datum/sprite_accessory/hair/teshari/longway
+	name = "Teshari Long way"
+	icon_state = "teshari_longway"
+
+/datum/sprite_accessory/hair/teshari/tree
+	name = "Teshari Tree"
+	icon_state = "teshari_tree"

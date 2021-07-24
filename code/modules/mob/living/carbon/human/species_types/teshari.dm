@@ -6,7 +6,7 @@
 	liked_food = GROSS | MEAT | FRIED
 	say_mod = "chirps"
 	species_language_holder = /datum/language_holder/teshari
-	species_traits = list(MUTCOLORS,EYECOLOR,LIPS,HAS_FLESH,HAS_BONE,NO_UNDERWEAR)
+	species_traits = list(MUTCOLORS,EYECOLOR,LIPS,HAS_FLESH,HAS_BONE,HAIR,FACEHAIR,NO_UNDERWEAR)
 	inherent_traits = list(TRAIT_RESISTCOLD, TRAIT_ADVANCEDTOOLUSER)
 	attack_verb = "slash"
 	attack_sound = 'sound/weapons/slash.ogg'
