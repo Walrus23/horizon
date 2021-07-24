@@ -345,3 +345,4 @@
 	recommended_species = list("teshari")
 	organ_type = /obj/item/organ/tail/fluffy/no_wag
 	name = "Teshari Tail"
+	bodytypes = BODYTYPE_TESHARI

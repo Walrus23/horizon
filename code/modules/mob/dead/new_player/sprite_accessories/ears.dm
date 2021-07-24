@@ -228,3 +228,25 @@
 /datum/sprite_accessory/ears/mutant/miqote
 	name = "Miqo'te"
 	icon_state = "miqote"
+
+/datum/sprite_accessory/ears/teshari
+	organ_type = /obj/item/organ/ears/mutant
+	color_src = USE_MATRIXED_COLORS
+	recommended_species = list("teshari")
+	icon = 'icons/mob/sprite_accessory/teshari_ears.dmi'
+	bodytypes = BODYTYPE_TESHARI
+
+/datum/sprite_accessory/ears/teshari/default
+	name = "Teshari"
+	icon_state = "teshari"
+	hasinner = TRUE
+
+/datum/sprite_accessory/ears/teshari/upper
+	name = "Teshari (upper ears)"
+	icon_state = "tesharihigh"
+	hasinner = TRUE
+
+/datum/sprite_accessory/ears/teshari/lower
+	name = "Teshari (lower ears)"
+	icon_state = "tesharilow"
+	hasinner = TRUE
